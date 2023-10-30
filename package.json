@@ -1,17 +1,32 @@
 {
   "name": "@manusanchev/vue3-clickaway",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "private": false,
+  "type": "module",
   "description": "Vue 3 directive to detect clickaway events",
-  "main": "index.js",
+  "main": "dist/bundle.min.js",
   "repository": "https://github.com/manusanchev/vue3-clickaway",
   "scripts": {
-    "build": "tsc index.ts"
+    "build": "rollup -c"
   },
-  "keywords": ["Vue3", "Nuxt3", "Directive"],
-  "author": "manusanchev.com",
+  "keywords": [
+    "Vue3",
+    "Nuxt3",
+    "Directive"
+  ],
+  "author": "Manuel S <https://github.com/manusanchev>",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/vue": "^2.0.0",
+    "rollup": "^4.1.5",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "terser": "^5.22.0",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.x.x"
   }
 }

@@ -1,0 +1,4 @@
+node_modules
+directive.ts
+rollup.config.js
+tsconfig.json

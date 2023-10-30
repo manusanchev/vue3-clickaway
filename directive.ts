@@ -1,14 +1,15 @@
-import { App, Directive } from "vue";
+import type { App, Directive } from "vue";
 
-const clickAwayHandlers = new WeakMap<HTMLElement, (event: MouseEvent) => void>();
+const clickAwayHandlers = new WeakMap<HTMLElement, (event: MouseEvent | TouchEvent) => void>();
 
 const clickAway: Directive<HTMLElement, (event: Event) => void> = {
   mounted(el, binding) {
-    const clickHandler = (event: MouseEvent) => {
+    const clickHandler = (event: MouseEvent | TouchEvent) => {
       if (!el.contains(event.target as Node)) {
-        binding.value(event);
+        binding.value(event as unknown as Event);
       }
     };
+
 
     clickAwayHandlers.set(el, clickHandler);
 
