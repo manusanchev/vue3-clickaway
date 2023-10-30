@@ -1,6 +1,6 @@
 # vue3 ClickAway
 
-Detect clickaway from element in vue 3 apps
+Vue 3 directive to detect clickaway events
 
 ## Install
 
