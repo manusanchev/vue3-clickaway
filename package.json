@@ -9,8 +9,8 @@
     "build": "tsc index.ts"
   },
   "keywords": ["Vue3", "Nuxt3", "Directive"],
-  "author": "manusanhev.com",
-  "license": "ISC",
+  "author": "manusanchev.com",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2"
   }
