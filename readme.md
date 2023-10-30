@@ -7,19 +7,19 @@ Detect clickaway from element in vue 3 apps
 ### PNPM
 
 ```bash
-pnpm add vue-clickaway-directive
+pnpm add @manusanchev/vue3-clickaway
 ```
 
 ### Yarn
 
 ```bash
-yarn install vue-clickaway-directive
+yarn install @manusanchev/vue3-clickaway
 ```
 
 ### NPM
 
 ```bash
-npm install vue-clickaway-directive
+npm install @manusanchev/vue3-clickaway
 ```
 
 ## Register
@@ -28,7 +28,7 @@ npm install vue-clickaway-directive
 
 ```js
 import { createApp } from "vue";
-import ClickAway from "vue3-clickaway";
+import ClickAway from "@manusanchev/vue3-clickaway";
 import App from "./App.vue";
 
 const app = createApp(App);
@@ -42,7 +42,7 @@ app.mount("#app");
 plugins/clickaway.client.ts
 
 ```nuxtjs
-import ClickAway from 'vue3-clickaway';
+import ClickAway from "@manusanchev/vue3-clickaway";
 
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.use(ClickAway);

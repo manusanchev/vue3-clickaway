@@ -1,13 +1,10 @@
 {
   "name": "@manusanchev/vue3-clickaway",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "private": false,
   "description": "Vue 3 directive to detect clickaway events",
   "main": "index.js",
   "repository": "https://github.com/manusanchev/vue3-clickaway",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/manusanchev"
-  },
   "scripts": {
     "build": "tsc index.ts"
   },
