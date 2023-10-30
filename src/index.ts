@@ -1,6 +1,9 @@
 import type { App, Directive } from "vue";
 
-const clickAwayHandlers = new WeakMap<HTMLElement, (event: MouseEvent | TouchEvent) => void>();
+const clickAwayHandlers = new WeakMap<
+  HTMLElement,
+  (event: MouseEvent | TouchEvent) => void
+>();
 
 const clickAway: Directive<HTMLElement, (event: Event) => void> = {
   mounted(el, binding) {
@@ -9,7 +12,6 @@ const clickAway: Directive<HTMLElement, (event: Event) => void> = {
         binding.value(event as unknown as Event);
       }
     };
-
 
     clickAwayHandlers.set(el, clickHandler);
 

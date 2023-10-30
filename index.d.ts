@@ -1,1 +1,0 @@
-declare module '@manusanchev/vue3-clickaway';
