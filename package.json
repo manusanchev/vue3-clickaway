@@ -1,0 +1,15 @@
+{
+  "name": "vue3-clickaway",
+  "version": "1.0.0",
+  "description": "Vue 3 directive to detect clickaway events",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc index.ts"
+  },
+  "keywords": ["Vue3", "Nuxt3", "Directive"],
+  "author": "manusanhev.com",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
